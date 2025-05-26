@@ -1,0 +1,53 @@
+
+.App {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;
+  min-height: 100vh; 
+  padding: 20px; 
+  box-sizing: border-box;
+  background-color: #f0f2f5;
+}
+
+.main-content-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1600px;
+}
+
+
+.Infocard-summary-container,
+.inquiry-form-container {
+  flex: 1 1 45%; 
+  min-width: 350px; 
+}
+
+
+
+@media (max-width: 1024px) {
+  .main-content-layout {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .Infocard-summary-container,
+  .inquiry-form-container {
+    width: 90%; 
+    flex: 1 1 auto; 
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 15px;
+  }
+  .Infocard-summary-container,
+  .inquiry-form-container {
+    width: 95%;
+  }
+}

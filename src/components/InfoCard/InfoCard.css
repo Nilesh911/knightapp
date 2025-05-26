@@ -1,0 +1,236 @@
+.Infocard-summary-container {
+  font-family: Arial, sans-serif;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  overflow: hidden;
+}
+.parent-container {
+  display: flex; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
+}
+
+
+.Infocard-summary-container {
+  font-family: Arial, sans-serif;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin: 20px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  overflow: hidden;
+  width: 100%; 
+  max-width: 800px; 
+  box-sizing: border-box; 
+}
+
+.Infocard-summary-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.Infocard-social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.Infocard-social-icons a {
+  color: #555;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.Infocard-social-icons a:hover {
+  color: #007bff;
+}
+
+.Infocard-header-clickme {
+  margin-left: 20px;
+  font-size: 14px;
+  color: #777;
+}
+
+.Infocard-summary-content {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.Infocard-profile-image-wrapper {
+  flex-shrink: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.Infocard-profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.Infocard-info-section {
+  flex-grow: 1;
+}
+
+.Infocard-info-section h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: black;
+  font-size: 28px;
+}
+
+.Infocard-info-section .Infocard-title {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.Infocard-contact-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  color: #555;
+  font-size: 15px;
+}
+
+.contact-icon {
+  margin-right: 8px;
+  color: #007bff;
+  font-size: 18px;
+}
+
+.Infocard-summary-text {
+  background-color: #f0f2f5;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  line-height: 1.6;
+  color: #333;
+}
+
+.Infocard-summary-text p {
+  margin-bottom: 10px;
+}
+
+.Infocard-summary-text p:last-child {
+  margin-bottom: 0;
+}
+
+.Infocard-summary-text strong {
+  color: #000;
+}
+
+.quote-start {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-size: 60px;
+  color: #ccc;
+  line-height: 1;
+  font-family: serif;
+}
+
+.quote-end {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 60px;
+  color: #ccc;
+  line-height: 1;
+  font-family: serif;
+}
+
+.Infocard-summary-footer {
+  text-align: center;
+  padding: 15px 20px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e0e0e0;
+  color: #777;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.Infocard-summary-footer span {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .Infocard-summary-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Infocard-info-section {
+    text-align: center;
+  }
+
+  .Infocard-contact-info {
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: 0 auto 20px auto;
+  }
+
+  .Infocard-profile-image-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .Infocard-summary-text {
+    padding: 15px;
+  }
+
+  .quote-start,
+  .quote-end {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Infocard-social-icons {
+    gap: 10px;
+  }
+
+  .Infocard-social-icons a {
+    font-size: 20px;
+  }
+
+  .Infocard-info-section h2 {
+    font-size: 24px;
+  }
+
+  .Infocard-title {
+    font-size: 16px;
+  }
+
+  .contact-item {
+    font-size: 14px;
+  }
+
+  .contact-icon {
+    font-size: 16px;
+  }
+
+  .Infocard-summary-footer {
+    padding: 10px;
+    font-size: 12px;
+  }
+}

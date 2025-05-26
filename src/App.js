@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ExportImportStats from './components/ExportImportStats/ExportImportStats';
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
+import QuiryForm from './components/QuiryForm/QuiryFrom';
+// import InfoCard from './components/InfoCard/InfoCard';
+import Footer from './components/Footer/Footer';
+import Contactus from './components/Contactus/Contactus';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+        <ExportImportStats/>
+        <Contactus/>
+        {/* <QuiryForm/> */}
+        <Footer/>
+
+        {/* <InfoCard/> */}
+        <Routes>
+          {/* <Route path='/' element={<Main />} /> */}
+        </Routes>
+    </Router>
+  )
 }
 
-export default App;
+export default App

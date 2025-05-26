@@ -1,0 +1,112 @@
+.footer {
+  background-color: #ffffff;
+  color: #060606;
+  padding: 40px 20px;
+  border-top: 1px solid #cce7ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.footer-section{
+    /* border-right: 2px solid rgb(68, 112, 170); */
+    border-right: 2px solid black;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* border-right: 2px solid black; */
+}
+
+.logo-img {
+  width: 80px;
+  height: 80px;
+}
+
+.brand-text {
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.infinity {
+  color: #00aaff;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #3e8de3;
+  margin-top: 10px;
+}
+.footer-section-social{
+    color: #005ea6;
+    font-size: 1.1rem;
+}
+.footer-section h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #005ea6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+}
+
+.footer-section ul li {
+  cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 1.2rem;
+  color: #0077cc;
+  margin-bottom: 15px;
+}
+.social-icons svg {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.social-icons svg:hover {
+  transform: scale(1.2);
+  color: #87cefa; /* Optional hover color */
+}
+
+
+.visit-us h5 {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #060606;
+}
+
+.visit-us p {
+  font-size: 0.9rem;
+  color: #060606;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.location svg {
+  margin-right: 8px;
+  color: #0077cc;
+}
+
+.location span {
+  font-weight: 600;
+  text-decoration: underline;
+}
